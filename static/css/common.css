@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand|Roboto');
+
+*
+{
+    font-family: Roboto;
+}
+
+body
+{
+    margin: 10px;
+}
+
+footer
+{
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-text
+{
+    color: white;
+}
