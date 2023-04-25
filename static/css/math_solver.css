@@ -1,0 +1,46 @@
+.math-input
+{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.math-input input
+{
+    padding: 15px;
+    font-size: 1.2em;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.math-input-buttons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.math-input-btn
+{
+    padding: 15px 25px;
+    font-size: 1.2em;
+    background-color: orange;
+    color: white;
+    width: 100%;
+    border: 1px solid rgb(225, 225, 225);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+.math-output
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 20px;
+}
+
+.math-output-text
+{
+    white-space: pre-wrap;
+}

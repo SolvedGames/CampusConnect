@@ -9,3 +9,13 @@ $(() =>
             }
         });
 });
+
+$("#problem-solver-card").on("click", () =>
+{
+    window.location.href = "/maths/solver/"
+});
+
+$("#notes-card").on("click", () =>
+{
+    window.location.href = "/notes/"
+});

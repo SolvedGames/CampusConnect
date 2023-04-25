@@ -10,6 +10,92 @@ body
     margin: 10px;
 }
 
+main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.body-section
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-section
+{
+    background-color: rgb(196, 115, 0);
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-section
+{
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards-group
+{
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.card
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(225, 225, 225);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+    padding: 10px;
+}
+
+.card img, .card ion-icon
+{
+    width: 50px;
+    height: 50px;
+}
+
+.card span
+{
+    text-overflow: clip;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.card .card-heading
+{
+    font-size: 1.4em;
+    -webkit-line-clamp: 1;
+}
+
+.card .card-body
+{
+    text-align: left;
+}
+
 footer
 {
     background-color: black;
