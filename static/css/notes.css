@@ -1,9 +1,140 @@
 .body-section
 {
-    padding: 40px;
+    
 }
 
 .card
 {
     padding: 20px;
+}
+
+.tools
+{
+    border-right: 2px solid rgb(75, 75, 75);
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 20px * 2);
+}
+
+.tool
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    gap: 5px;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    transition-duration: 0.1s;
+    user-select: none;
+}
+
+.tool:hover
+{
+    scale: 0.95;
+}
+
+.tool:active
+{
+    scale: 0.85;
+    opacity: 0.8;
+}
+
+.tool ion-icon
+{
+    width: 50px;
+    height: 50px;
+}
+
+.tool span
+{
+    font-size: 0.9em;
+}
+
+html, body
+{
+    margin: 5px;
+    height: calc(100% - 5px * 2);
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+#notes-section
+{
+    display: flex;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#notes-section .tools
+{
+    flex-basis: auto;
+}
+
+.notes-area
+{
+    flex-grow: 1;
+    background-image: radial-gradient(rgb(45, 45, 45) 15%, transparent 15%);
+    background-size: 16px 16px;
+    padding: 20px;
+}
+
+
+.note
+{
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    user-select: contain;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.note.editing
+{
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.note .note-textarea
+{
+    background-color: rgb(50, 50, 50);
+    outline: none;
+    border: none;
+    color: rgb(235, 235, 235);
+    padding: 30px;
+    font-size: 1.2em;
+    margin: 0;
+    display: block;
+    min-height: 25px;
+    height: max-content;
+    width: 320px;
+    min-width: 100px;
+    margin: 0;
+    display: block;
+    resize: both;
+    user-select: none;
+}
+
+.note.editing .note-textarea
+{
+    user-select: all;
+}
+
+.note .note-textarea:empty::after
+{
+    content: "Type something..";
+    color: gray;
 }

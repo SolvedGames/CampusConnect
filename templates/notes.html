@@ -9,7 +9,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="/static/css/common.css">
-    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/navbar_notes.css">
     <link rel="stylesheet" href="/static/css/notes.css">
 </head>
 
@@ -23,36 +23,51 @@
 
     <main>
 
-        <div id="main-section" class="body-section">
+        <div id="notes-section" class="body-section">
 
-            <div class="cards-container">
-                <div class="card">
-                    <span class="card-heading">Title</span>
-                    <span class="card-body">Body</span>
+            <div class="tools">
+                <div class="tool">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                    <span class="tool-text">Note</span>
                 </div>
 
-                <div class="card">
-                    <span class="card-heading">Here is a title</span>
-                    <span class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem animi consequatur praesentium quaerat? Sunt id perferendis odit ab, possimus unde perspiciatis enim quos iure qui veritatis. Porro, voluptate facere.</span>
+                <div class="tool">
+                    <ion-icon name="list-outline"></ion-icon>
+                    <span class="tool-text">Todo</span>
                 </div>
+
+                <div class="tool">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span class="tool-text">Link</span>
+                </div>
+            </div>
+
+            <div class="notes-area">
+
+                <div class="note" style="top: 300px; left: 500px;">
+                    <div placeholder="Type something.." class="note-textarea"></div>
+                </div>
+
+                <div class="note" style="top: 400px; left: 1000px;">
+                    <div placeholder="Type something.." class="note-textarea"></div>
+                </div>
+
+                <div class="note" style="top: 700px; left: 700px;">
+                    <div placeholder="Type something.." class="note-textarea"></div>
+                </div>
+
             </div>
 
         </div>
 
     </main>
 
-    <footer>
-        <div class="copyright-text">
-            <span>Copyright The Coding Fox 2023 - All Rights Reserved</span>
-        </div>
-    </footer>
-
 
     <script src="/static/node_modules/jquery/dist/jquery.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/navbar_notes.js"></script>
     <script src="/static/js/notes.js"></script>
 
 </body>

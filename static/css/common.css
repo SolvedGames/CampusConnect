@@ -5,9 +5,25 @@
     font-family: Roboto;
 }
 
+h1, h2, h3, span, input
+{
+    color: rgb(224, 224, 224);
+}
+
+input::placeholder
+{
+    color: rgb(150, 150, 150);
+}
+
+ion-icon
+{
+    color: rgb(245, 245, 245);
+}
+
 body
 {
     margin: 10px;
+    background-color: rgb(35, 35, 35);
 }
 
 main
@@ -21,6 +37,7 @@ main
 .body-section
 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(40, 40, 40);
 }
 
 .header-section
@@ -40,6 +57,11 @@ main
     flex-wrap: wrap;
 }
 
+.cards-section h2
+{
+    
+}
+
 .cards-container
 {
     display: flex;
@@ -53,7 +75,7 @@ main
 {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
-    border: 1px solid rgb(225, 225, 225);
+    border: 2px solid rgb(75, 75, 75);
 }
 
 .card
@@ -64,7 +86,7 @@ main
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(225, 225, 225);
+    border: 1px solid rgb(75, 75, 75);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     gap: 5px;
     padding: 10px;
@@ -108,4 +130,22 @@ footer
 .copyright-text
 {
     color: white;
+}
+
+.webpage-navigation
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.webpage-navigation span
+{
+    font-size: 1.3em;
+}
+
+.webpage-navigation span.seperator
+{
+    font-weight: bold;
 }
