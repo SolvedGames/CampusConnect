@@ -26,7 +26,7 @@
         <div id="notes-section" class="body-section">
 
             <div class="tools">
-                <div class="tool">
+                <div id="note-tool" class="tool">
                     <ion-icon name="document-text-outline"></ion-icon>
                     <span class="tool-text">Note</span>
                 </div>
@@ -42,20 +42,25 @@
                 </div>
             </div>
 
-            <div class="notes-area">
+            <div id="main-notes-area" class="notes-area">
 
-                <div class="note" style="top: 300px; left: 500px;">
-                    <div placeholder="Type something.." class="note-textarea"></div>
+                <div id="main-notes" class="notes">
+                    <div class="note" style="top: 300px; left: 500px;">
+                        <div placeholder="Type something.." class="note-textarea"></div>
+                        <ion-icon name="arrow-forward" class="note-connection-icon"></ion-icon>
+                    </div>
+    
+                    <div class="note" style="top: 400px; left: 1000px;">
+                        <div placeholder="Type something.." class="note-textarea"></div>
+                        <ion-icon name="arrow-forward" class="note-connection-icon"></ion-icon>
+                    </div>
+    
+                    <div class="note" style="top: 700px; left: 700px;">
+                        <div placeholder="Type something.." class="note-textarea"></div>
+                        <ion-icon name="arrow-forward" class="note-connection-icon"></ion-icon>
+                    </div>
                 </div>
-
-                <div class="note" style="top: 400px; left: 1000px;">
-                    <div placeholder="Type something.." class="note-textarea"></div>
-                </div>
-
-                <div class="note" style="top: 700px; left: 700px;">
-                    <div placeholder="Type something.." class="note-textarea"></div>
-                </div>
-
+                
             </div>
 
         </div>

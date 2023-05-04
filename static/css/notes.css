@@ -1,6 +1,7 @@
-.body-section
+html, body
 {
-    
+    margin: 0px;
+    height: calc(100% - 0px * 2);
 }
 
 .card
@@ -16,6 +17,8 @@
     display: flex;
     flex-direction: column;
     height: calc(100% - 20px * 2);
+    z-index: 100;
+    background-color: rgba(40, 40, 40, 0.8);
 }
 
 .tool
@@ -56,11 +59,7 @@
     font-size: 0.9em;
 }
 
-html, body
-{
-    margin: 5px;
-    height: calc(100% - 5px * 2);
-}
+
 
 body
 {
@@ -101,11 +100,45 @@ main
     padding: 0;
     user-select: contain;
     border: 1px solid rgb(50, 50, 50);
+    transition-duration: 0s;
+}
+
+.note .note-connection-icon
+{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    padding: 3px;
+    color: white;
+    transition-duration: 0.1s;
+    opacity: 0;
+    scale: 0.5;
+}
+
+.note .note-connection-icon:hover
+{
+    scale: 0.9;
+    color: black;
+}
+
+.note .note-connection-icon:active
+{
+    scale: 0.85;
 }
 
 .note.editing
 {
     border: 1px solid rgb(75, 75, 75);
+}
+
+.note:hover .note-connection-icon
+{
+    opacity: 1;
 }
 
 .note .note-textarea
