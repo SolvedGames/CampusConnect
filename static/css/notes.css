@@ -101,6 +101,7 @@ main
     user-select: contain;
     border: 1px solid rgb(50, 50, 50);
     transition-duration: 0s;
+    z-index: 50;
 }
 
 .note .note-connection-icon
@@ -170,4 +171,34 @@ main
 {
     content: "Type something..";
     color: gray;
+}
+
+svg
+{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+svg#connections-svg
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+
+svg path
+{
+    z-index: 10;
+}
+
+.note-connection-line-adjuster
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
 }
